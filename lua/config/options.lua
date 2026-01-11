@@ -7,3 +7,6 @@ vim.g.snacks_animate = false
 
 -- Enable line wrapping
 vim.opt.wrap = true
+
+-- Use system clipboard for yank/paste
+vim.opt.clipboard = "unnamedplus"
