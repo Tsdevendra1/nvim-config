@@ -7,6 +7,10 @@ return {
         grep = {
           regex = false,  -- Use fixed-strings (literal) by default
         },
+        files = {
+          ignored = true,  -- show .gitignore'd files
+          hidden = true,   -- show dotfiles
+        },
       },
     },
   },
