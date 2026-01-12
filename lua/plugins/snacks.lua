@@ -3,6 +3,9 @@ return {
   "folke/snacks.nvim",
   opts = {
     picker = {
+      matcher = {
+        smartcase = true,
+      },
       sources = {
         grep = {
           regex = false,  -- Use fixed-strings (literal) by default
