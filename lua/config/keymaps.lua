@@ -10,3 +10,5 @@ vim.keymap.set('n', '<leader>yp', function()
   vim.fn.setreg('+', path)
   vim.notify('Copied: ' .. path)
 end, { desc = 'Yank relative path' })
+
+vim.keymap.set("n", "<leader>br", "<cmd>edit!<cr>", { desc = "Revert buffer (reload from disk)" })
