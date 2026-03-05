@@ -12,3 +12,9 @@ vim.keymap.set('n', '<leader>yp', function()
 end, { desc = 'Yank relative path' })
 
 vim.keymap.set("n", "<leader>br", "<cmd>edit!<cr>", { desc = "Revert buffer (reload from disk)" })
+
+local function toggle_term()
+  require("snacks").terminal(nil, { cwd = LazyVim.root() })
+end
+
+vim.keymap.set({ "n", "t", "i" }, "<C-g>", toggle_term, { desc = "Terminal (Root Dir)" })

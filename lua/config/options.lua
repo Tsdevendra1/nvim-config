@@ -10,3 +10,9 @@ vim.opt.wrap = true
 
 -- Use system clipboard for yank/paste
 vim.opt.clipboard = "unnamedplus"
+
+-- Disable LSP inlay hints
+vim.lsp.inlay_hint.enable(false)
+
+-- Disable spell check
+vim.opt.spell = false
