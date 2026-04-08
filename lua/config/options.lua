@@ -4,6 +4,7 @@
 vim.g.root_spec = { "cwd" }
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.snacks_animate = false
+vim.g.autoformat = false
 
 -- Enable line wrapping
 vim.opt.wrap = true

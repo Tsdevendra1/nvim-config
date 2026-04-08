@@ -17,3 +17,8 @@ vim.api.nvim_create_autocmd("FocusLost", {
 
 -- optional: reduce "E37" prompts on common jumps/commands
 vim.opt.autowrite = true
+
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold" }, {
+  group = vim.api.nvim_create_augroup("AutoReadChecktime", { clear = true }),
+  command = "checktime",
+})

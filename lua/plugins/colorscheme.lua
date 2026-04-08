@@ -42,6 +42,9 @@ return {
         hl["@keyword"] = { link = "Statement" }
         hl["@lsp.type.keyword.python"] = {}
 
+        -- Keep Markdown inline code unboxed.
+        hl["@markup.raw.markdown_inline"] = { fg = c.fg, bg = "NONE" }
+
       end,
     },
   },
